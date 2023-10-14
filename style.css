@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #441570;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    flex-direction: column;
+    background: #bcbabe;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container .inputContainer:focus-within{
+    border-color: #441570;
+}
+
+
+.container h2{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.inputContainer input , select{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.inputContainer{
+    border: 2px solid #1b1919;
+    background-color: #fff;
+}
+
+.arrow{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-block: 25px;
+}
+
+.result{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:475px){
+    .inputContainer{
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #bcbabe;
+    }
+
+    .inputContainer input , select{
+        border: 1px solid #1b1919;
+        margin-block: 10px;
+        font-size: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .container h2{
+        font-size: 20px;
+    }
+}
